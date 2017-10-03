@@ -38,9 +38,17 @@ The package includes very simple configuration scripts based on [Gulp](https://g
     $ yarn run configure
     $ yarn run deploy
 
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/pierreis/webleak/master/images/configure.png">
+</p>
+
 All these steps can be combined into one:
 
     $ yarn start
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/pierreis/webleak/master/images/text.png">
+</p>
 
 ## Notes
 
