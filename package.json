@@ -1,0 +1,49 @@
+{
+  "name": "webleak",
+  "version": "1.0.0",
+  "description": "Get notified when your e-mail or password leaks on the internet. Powered by Webtask.",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "NODE_PATH=. gulp bundle",
+    "bundle:config": "NODE_PATH=. gulp bundle:config",
+    "bundle:webtasks": "NODE_PATH=. gulp bundle:webtasks",
+    "bundle:watch": "NODE_PATH=. gulp bundle:watch",
+    "configure": "NODE_PATH=. gulp configure",
+    "configure:accounts": "NODE_PATH=. gulp configure:accounts",
+    "configure:trigger": "NODE_PATH=. gulp configure:trigger",
+    "configure:notify": "NODE_PATH=. gulp configure:notify",
+    "configure:webtask": "NODE_PATH=. gulp configure:webtask",
+    "deploy": "NODE_PATH=. gulp deploy",
+    "undeploy": "NODE_PATH=. gulp undeploy",
+    "start": "NODE_PATH=. gulp all"
+  },
+  "keywords": [],
+  "author": "Pierre Matri <pierre@matri.me>",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-runtime": "^6.26.0",
+    "js-base64": "^2.3.2",
+    "shallow-equals": "^1.0.0",
+    "twilio": "^3.7.0",
+    "urlencode": "^1.1.0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-main-npm-files": "^1.0.5",
+    "gulp-prompt": "^0.2.0",
+    "gulp-uglify": "^3.0.0",
+    "inquirer": "^3.3.0",
+    "mkdirp": "^0.5.1",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "^4.1.1",
+    "qs": "^6.5.1",
+    "run-sequence": "^2.2.0",
+    "shell-escape": "^0.2.0",
+    "wt-cli": "^6.5.2"
+  }
+}

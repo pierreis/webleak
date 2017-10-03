@@ -1,0 +1,12 @@
+{
+  "triggers": {},
+  "databases": [
+    "haveibeenpwned"
+  ],
+  "accounts": [],
+  "notify": {},
+  "webtask": {
+    "name": "webleak",
+    "schedule": "1h"
+  }
+}
