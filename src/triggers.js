@@ -20,6 +20,8 @@ export default async function shouldUpdate(context) {
 }
 
 /**
+ * @private
+ * 
  * Runs a specific tigger and saves its new state to storage if modified
  * 
  * @param {object} context the context object

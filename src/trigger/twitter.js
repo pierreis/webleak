@@ -23,6 +23,8 @@ export default async (context, config) => {
 }
 
 /**
+ * @private
+ * 
  * Get the last tweet ID for a specific twitter account
  * 
  * @param {str} account the twitter user to get last tweet id for
