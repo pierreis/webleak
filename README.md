@@ -1,4 +1,4 @@
-# Webleak 🌊
+# Webleak 🌊🌊🌊
 
 Account leaks are all but infrequent these days. Webleak is a simple tool that will periodically check for leaks for your
 account in large databases. Should one of your accounts be exposed, you will be instantly notified so you can take the
@@ -13,7 +13,7 @@ is cool enough. No doubt that you can easily extend to notify you via e-mail, sm
 ## What you will need:
 
  - A Webstack account (which is free)
- - A Twitter account (which is optional but recommended, and free)
+ - A Twitter account (which is optional but recommended, and free), and a developer application key (free also)
  - A Twilio account (which is free to try, and very inexpensive thereafter)
  - Node and NPM (or Yarn) installed
 
@@ -46,6 +46,9 @@ All these steps can be combined into one:
 
     $ yarn start
 
+If everything goes as expected, you should receive a text message automatically when your account leaks somewhere (which
+hopefully should not happen often).
+
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/pierreis/webleak/master/images/text.png">
 </p>
@@ -61,4 +64,5 @@ All these steps can be combined into one:
 
 The command line configuration tool is great for getting started, but ultimately you can find yourself limited, and will want to
 edit the configuration file by yourself. 
+
 The configuration file lies in `dist/config.json` after bundle, and is pretty self-explanatory.
