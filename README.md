@@ -62,7 +62,7 @@ Additional scripts are provided for more granular control over the deployment pr
     $ yarn run configure:accounts   // Configure accounts to watch
     $ yarn run configure:trigger    // Configure triggers
     $ yarn run confugure:notify     // Configure notifications
-    $ yarn run configure:webtast    // Configure task name and cron scheduling
+    $ yarn run configure:webtask    // Configure webtask name and cron scheduling
 
 The webtask can be undeployed by running:
 
