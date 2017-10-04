@@ -17,7 +17,7 @@ module.exports = (callback) => {
   
     function onAnswered(res) {
       if (res.trigger === 'Twitter') return runSequence(['configure:twitter'], callback);
-      return callback();
+      callback();
     }
   
     prompt(questions).then(onAnswered).catch((err) => callback(err));

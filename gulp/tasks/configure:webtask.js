@@ -31,6 +31,7 @@ module.exports = (callback) => {
       name: data.name,
       schedule: data.schedule
     });
+    callback();
   }
 
   prompt(questions).then(onAnswered).catch((err) => callback(err));

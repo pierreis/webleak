@@ -21,7 +21,7 @@ module.exports = (callback) => {
       if (res.notify.length) {
         return runSequence(res.notify.map((name) => `configure:${name.toLowerCase()}`), callback);
       }
-      return callback();
+      callback();
     }
   
     prompt(questions).then(onAnswered).catch((err) => callback(err));

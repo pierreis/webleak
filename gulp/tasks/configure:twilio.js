@@ -56,6 +56,7 @@ module.exports = (callback) => {
         to: data.to
       }
     });
+    callback();
   }
 
   prompt(questions).then(onAnswered).catch((err) => callback(err));
