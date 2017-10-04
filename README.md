@@ -5,7 +5,7 @@ account in large databases. Should one of your accounts be exposed, you will be 
 appropriate measures (who said changing your password, and, even better, enable multi-factor authentication?).
 
 Webleak is a serverless tool running on [Webtask](https://webtask.io) from the folks at [Auth0](https://auth0.com). A free plan
-that offerso mre than enough resources for Webleak is available.
+that offers more than enough resources for Webleak is available.
 
 **This software is a proof of concept at the moment**, so notifications are only supported via text message with Twilio, which
 is cool enough. No doubt that you can easily extend to notify you via e-mail, smoke signals or avian carrier if needed.
@@ -14,7 +14,7 @@ is cool enough. No doubt that you can easily extend to notify you via e-mail, sm
 
  - A Webstack account (which is free)
  - A Twitter account (which is optional but recommended, and free), and a developer application key (free also)
- - A Twilio account (which is free to try, and very inexpensive thereafter)
+ - A Twilio account (which is equally free to try, and very inexpensive thereafter)
  - Node and NPM (or Yarn) installed
 
 ## Why triggers instead of checking databases regularly?
@@ -52,6 +52,21 @@ hopefully should not happen often).
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/pierreis/webleak/master/images/text.png">
 </p>
+
+Additional scripts are provided for more granular control over the deployment process:
+
+    $ yarn run bundle:config        // Copy the configuration files to dist folder
+    $ yarn run bundle:watch         // Run the bundle automatically whenever code changes
+    $ yarn run bundle:webtasks      // Compile and minify source files with Babel
+
+    $ yarn run configure:accounts   // Configure accounts to watch
+    $ yarn run configure:trigger    // Configure triggers
+    $ yarn run confugure:notify     // Configure notifications
+    $ yarn run configure:webtast    // Configure task name and cron scheduling
+
+The webtask can be undeployed by running:
+
+    $ yarn run undeploy
 
 ## Notes
 
